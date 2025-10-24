@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className='bg-[#262626] pt-4'>
       <div className='container flex flex-col md:flex-row text-center md:text-left justify-center  items-center gap-2 md:gap-8'>
-        <Image src='/images/logo.webo' alt='logo' width={60} height={60} />
+        <Image src='/images/logo.webp' alt='logo' width={60} height={60} />
 
         <div className='flex flex-col gap-2'>
           <p className='text-white md:text-sm text-xs'>
