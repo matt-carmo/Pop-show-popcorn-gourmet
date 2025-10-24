@@ -179,7 +179,7 @@ export default function Home() {
                     Pop show para seu evento
                   </h2>
                   <p className='text-sx lg:text-base text-gray-300'>
-                    Leve o sabor e o cheirinho da pipoca quentinha para o seu
+                    Leve o sabor e o cheirinho da pipoca para o seu
                     evento!Nosso carrinho Pop Show é ideal para aniversários,
                     casamentos, eventos corporativos e muito mais.Um atendente
                     acompanha o carrinho, preparando as pipocas na hora — um
@@ -205,7 +205,7 @@ export default function Home() {
                     Pop Show Delivery
                   </h2>
                   <p className='text-sx lg:text-base text-gray-300'>
-                    Peça agora e receba pipocas gourmet <br /> quentinhas no
+                    Peça agora e receba pipocas gourmet <br /> no
                     conforto da sua casa
                   </p>
                   <div className='flex justify-center lg:justify-start'>
