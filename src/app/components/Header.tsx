@@ -47,7 +47,7 @@ export const Header = () => {
           <nav className='flex justify-between items-center container mx-auto '>
             <a href='#'>
               <Image
-                src='/images/logo.png'
+                src='/images/logo.webo'
                 alt='Vercel Logo'
                 width={55}
                 height={55}
@@ -82,7 +82,7 @@ export const Header = () => {
         <nav className='flex justify-between items-center container mx-auto'>
           <a href='#'>
             <Image
-              src='/images/logo.png'
+              src='/images/logo.webo'
               alt='Vercel Logo'
               width={70}
               height={70}

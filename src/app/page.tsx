@@ -8,56 +8,56 @@ export default function Home() {
     {
       id: 1,
       name: "Ninho Color",
-      image: "/images/popcorn-1.png",
+      image: "/images/caramelizada.webp",
       description:
         "A clássica pipoca gourmet como você nunca provou! Com o sabor cremoso do leite Ninho Colorido, ela combina o croc croc da pipoca com o toque suave e aveludado que todo mundo ama.",
     },
     {
       id: 2,
       name: "Ninho com nutela",
-      image: "/images/ninho-com-nutella.png",
+      image: "/images/ninho-com-nutella.webp",
       description:
         "A clássica pipoca gourmet como você nunca provou! Com o sabor cremoso do leite Ninho com Nutella, ela combina o croc croc da pipoca com o toque suave e aveludado que todo mundo ama.",
     },
     {
       id: 3,
       name: "Morango",
-      image: "/images/morango.png",
+      image: "/images/morango.webp",
       description:
         "A clássica pipoca gourmet como você nunca provou! Com o sabor cremoso de morango, ela combina o croc croc da pipoca com o toque suave e aveludado que todo mundo ama.",
     },
     {
       id: 4,
       name: "Maracuja",
-      image: "/images/maracuja.png",
+      image: "/images/maracuja.webp",
       description:
         "A clássica pipoca gourmet como você nunca provou! Com o sabor cremoso do leite Ninho, ela combina o croc croc da pipoca com o toque suave e aveludado que todo mundo ama",
     },
     {
       id: 5,
       name: "Ninho",
-      image: "/images/ninho.png",
+      image: "/images/ninho.webp",
       description:
         "A clássica pipoca gourmet como você nunca provou! Com o sabor cremoso do leite Ninho, ela combina o croc croc da pipoca com o toque suave e aveludado que todo mundo ama.",
     },
     {
       id: 6,
       name: "Ovomaltine",
-      image: "/images/ovomaltine.png",
+      image: "/images/ovomaltine.webp",
       description:
         "A clássica pipoca gourmet como você nunca provou! Agora com o sabor inconfundível de Ovomaltine: aquela crocância deliciosa com o gostinho maltado e chocolatudo que conquista todo mundo.",
     },
     {
       id: 7,
       name: "Paçoca",
-      image: "/images/pacoca.png",
+      image: "/images/pacoca.webp",
       description:
         "A clássica pipoca gourmet como você nunca provou! Agora com o sabor irresistível de paçoca, ela une o melhor dos dois mundos: o croc croc da pipoca gourmet com o gostinho marcante do amendoim que todo brasileiro ama.",
     },
     {
       id: 8,
       name: "Doce",
-      image: "/images/doce.png",
+      image: "/images/doce.webp",
       description:
         "A clássica pipoca gourmet como você nunca provou! Simples, elegante e irresistível: o sabor doce que abraça o paladar e transforma qualquer momento em festa.",
     },
@@ -66,39 +66,30 @@ export default function Home() {
     {
       id: 1,
       name: "Pit Stop Universitário Campus ll",
-      image: "/images/revenue-1.png",
+      image: "/images/revenue-1.webp",
     },
     {
       id: 2,
-      name: "Pit Stop Universitário Campus ll",
-      image: "/images/revenue-1.png",
+      name: "Aki Tem Utilidades",
+      image: "/images/revenue-2.webp",
     },
     {
       id: 3,
-      name: "Pit Stop Universitário Campus ll",
-      image: "/images/revenue-1.png",
+      name: "Bar e Lanchonete do Gérão",
+      image: "/images/revenue-3.webp",
     },
     {
       id: 4,
-      name: "Pit Stop Universitário Campus ll",
-      image: "/images/revenue-1.png",
+      name: "Churrascaria Carvão de Ouro",
+      image: "/images/revenue-4.webp",
     },
-    {
-      id: 5,
-      name: "Pit Stop Universitário Campus ll",
-      image: "/images/revenue-1.png",
-    },
-    {
-      id: 6,
-      name: "Pit Stop Universitário Campus ll",
-      image: "/images/revenue-1.png",
-    },
+
   ];
   return (
     <>
       <Header />
       <main>
-        <section className='flex justify-center items-center h-[calc(100vh-7rem)] bg-[url("/images/hero-bg.png")] bg-cover bg-top relative px-4'>
+        <section className='flex justify-center items-center h-[calc(100vh-7rem)] bg-[url("/images/hero-bg.webp")] bg-cover bg-top relative px-4'>
           <div className='absolute inset-0 bg-black/30'></div>
           <div className='text-center space-y-6 max-w-96 lg:max-w-3xl z-1'>
             <h1 className='text-4xl lg:text-7xl font-medium text-white'>
@@ -143,7 +134,7 @@ export default function Home() {
             <h2 className='text-white text-2xl md:text-4xl text-center font-semibold  lg:max-w-xl mx-auto'>
               Encontre nossos revendedores ou torne-se um parceiro
             </h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
               {revenue_list.map((product) => (
                 <div
                   key={product.id}
@@ -154,10 +145,10 @@ export default function Home() {
                     alt={product.name}
                     width={250}
                     height={250}
-                    className='w-full'
+                    className='w-full h-full object-cover'
                   />
                   <div className='bg-black/40 backdrop-blur p-4 text-center absolute bottom-0 rounded-b-4xl w-full'>
-                    <h3 className='lg:text-2xl font-semibold text-white'>
+                    <h3 className='lg:text-xl font-semibold text-white'>
                       {product.name}
                     </h3>
                   </div>
@@ -177,7 +168,7 @@ export default function Home() {
             <ul className='gap-8 flex flex-col  lg:[&>li:nth-child(even)]:flex-row-reverse lg:[&>li:nth-child(even)>div]:text-right lg:[&>li:nth-child(even)>div]:items-end '>
               <li className='flex flex-col text-center lg:text-left lg:flex-row items-center gap-6'>
                 <Image
-                  src='/images/cart-pop-show.png'
+                  src='/images/cart-pop-show.webp'
                   alt='Vercel Logo'
                   width={500}
                   height={500}
@@ -203,7 +194,7 @@ export default function Home() {
               </li>
               <li className='flex flex-col text-center lg:text-left lg:flex-row items-center gap-6'>
                 <Image
-                  src='/images/delivery.png'
+                  src='/images/delivery.webp'
                   alt='Vercel Logo'
                   width={500}
                   height={500}
