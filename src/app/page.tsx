@@ -2,66 +2,11 @@ import Image from "next/image";
 import { Header } from "./components/Header";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import Footer from "./components/Footer";
+import Link from "next/link";
+import { products_list } from "./mock/products";
 
 export default function Home() {
-  const products_list = [
-    {
-      id: 1,
-      name: "Ninho Color",
-      image: "/images/caramelizada.webp",
-      description:
-        "A clássica pipoca gourmet como você nunca provou! Com o sabor cremoso do leite Ninho Colorido, ela combina o croc croc da pipoca com o toque suave e aveludado que todo mundo ama.",
-    },
-    {
-      id: 2,
-      name: "Ninho com nutela",
-      image: "/images/ninho-com-nutella.webp",
-      description:
-        "A clássica pipoca gourmet como você nunca provou! Com o sabor cremoso do leite Ninho com Nutella, ela combina o croc croc da pipoca com o toque suave e aveludado que todo mundo ama.",
-    },
-    {
-      id: 3,
-      name: "Morango",
-      image: "/images/morango.webp",
-      description:
-        "A clássica pipoca gourmet como você nunca provou! Com o sabor cremoso de morango, ela combina o croc croc da pipoca com o toque suave e aveludado que todo mundo ama.",
-    },
-    {
-      id: 4,
-      name: "Maracuja",
-      image: "/images/maracuja.webp",
-      description:
-        "A clássica pipoca gourmet como você nunca provou! Com o sabor cremoso do leite Ninho, ela combina o croc croc da pipoca com o toque suave e aveludado que todo mundo ama",
-    },
-    {
-      id: 5,
-      name: "Ninho",
-      image: "/images/ninho.webp",
-      description:
-        "A clássica pipoca gourmet como você nunca provou! Com o sabor cremoso do leite Ninho, ela combina o croc croc da pipoca com o toque suave e aveludado que todo mundo ama.",
-    },
-    {
-      id: 6,
-      name: "Ovomaltine",
-      image: "/images/ovomaltine.webp",
-      description:
-        "A clássica pipoca gourmet como você nunca provou! Agora com o sabor inconfundível de Ovomaltine: aquela crocância deliciosa com o gostinho maltado e chocolatudo que conquista todo mundo.",
-    },
-    {
-      id: 7,
-      name: "Paçoca",
-      image: "/images/pacoca.webp",
-      description:
-        "A clássica pipoca gourmet como você nunca provou! Agora com o sabor irresistível de paçoca, ela une o melhor dos dois mundos: o croc croc da pipoca gourmet com o gostinho marcante do amendoim que todo brasileiro ama.",
-    },
-    {
-      id: 8,
-      name: "Doce",
-      image: "/images/doce.webp",
-      description:
-        "A clássica pipoca gourmet como você nunca provou! Simples, elegante e irresistível: o sabor doce que abraça o paladar e transforma qualquer momento em festa.",
-    },
-  ];
+
   const revenue_list = [
     {
       id: 1,
@@ -105,7 +50,8 @@ export default function Home() {
             </h2>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
               {products_list.map((product) => (
-                <div
+                <Link
+                  href={`/product/${product.id}`}
                   key={product.id}
                   className='rounded-4xl border-2 border-zinc-900 flex flex-col'
                 >
@@ -113,8 +59,8 @@ export default function Home() {
                     <Image
                       src={product.image}
                       alt={product.name}
-                      width={250}
-                      height={250}
+                      width={256}
+                      height={378}
                       className='object-contain h-64 w-full p-4'
                     />
                   </div>
@@ -124,7 +70,7 @@ export default function Home() {
                     </h3>
                     <p className='text-gray-200 text-sm line-clamp-3'>{product.description}</p>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
