@@ -6,7 +6,6 @@ import Link from "next/link";
 import { products_list } from "./mock/products";
 
 export default function Home() {
-
   const revenue_list = [
     {
       id: 1,
@@ -28,7 +27,6 @@ export default function Home() {
       name: "Churrascaria Carvão de Ouro",
       image: "/images/revenue-4.webp",
     },
-
   ];
   return (
     <>
@@ -50,11 +48,12 @@ export default function Home() {
             </h2>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
               {products_list.map((product) => (
-                <Link
-                  href={`/product/${product.id}`}
-                  key={product.id}
-                  className='rounded-4xl border-2 border-zinc-900 flex flex-col'
-                >
+                // <Link
+                //   href={`/product/${product.id}`}
+                //   key={product.id}
+                //   className='rounded-4xl border-2 border-zinc-900 flex flex-col'
+                // >
+                <div className='rounded-4xl border-2 border-zinc-900 flex flex-col' key={product.id}>
                   <div>
                     <Image
                       src={product.image}
@@ -68,9 +67,12 @@ export default function Home() {
                     <h3 className='text-2xl font-semibold text-white'>
                       {product.name}
                     </h3>
-                    <p className='text-gray-200 text-sm line-clamp-3'>{product.description}</p>
+                    <p className='text-gray-200 text-sm line-clamp-3'>
+                      {product.description}
+                    </p>
                   </div>
-                </Link>
+                </div>
+                // </Link>
               ))}
             </div>
           </div>
@@ -101,7 +103,11 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <a href="https://wa.me/5518997416262?text=Ol%C3%A1%2C%20gostaria%20de%20me%20tornar%20um%20revendedor%20de%20Pipoca%20Gourmet." target="_blank" className='bg-yellow-400 text-zinc-900 px-6 py-2 rounded-full mx-auto block font-semibold text-2xl'>
+            <a
+              href='https://wa.me/5518997416262?text=Ol%C3%A1%2C%20gostaria%20de%20me%20tornar%20um%20revendedor%20de%20Pipoca%20Gourmet.'
+              target='_blank'
+              className='bg-yellow-400 text-zinc-900 px-6 py-2 rounded-full mx-auto block font-semibold text-2xl'
+            >
               Seja um revendedor
             </a>
           </div>
@@ -125,14 +131,18 @@ export default function Home() {
                     Pop show para seu evento
                   </h2>
                   <p className='text-sx lg:text-base text-gray-300'>
-                    Leve o sabor e o cheirinho da pipoca para o seu
-                    evento!Nosso carrinho Pop Show é ideal para aniversários,
-                    casamentos, eventos corporativos e muito mais.Um atendente
-                    acompanha o carrinho, preparando as pipocas na hora — um
-                    verdadeiro show à parte!
+                    Leve o sabor e o cheirinho da pipoca para o seu evento!Nosso
+                    carrinho Pop Show é ideal para aniversários, casamentos,
+                    eventos corporativos e muito mais.Um atendente acompanha o
+                    carrinho, preparando as pipocas na hora — um verdadeiro show
+                    à parte!
                   </p>
                   <div className='flex justify-center lg:justify-start'>
-                    <a href="https://wa.me/5518997416262?text=Ol%C3%A1%2C%20gostaria%20de%20alugar%20o%20carrinho%20de%20pipoca%20para%20minha%20festa." target="_blank" className='bg-yellow-400 text-zinc-900 px-6 py-2 rounded-full block font-semibold text-2xl'>
+                    <a
+                      href='https://wa.me/5518997416262?text=Ol%C3%A1%2C%20gostaria%20de%20alugar%20o%20carrinho%20de%20pipoca%20para%20minha%20festa.'
+                      target='_blank'
+                      className='bg-yellow-400 text-zinc-900 px-6 py-2 rounded-full block font-semibold text-2xl'
+                    >
                       Alugue para sua Festa
                     </a>
                   </div>
@@ -151,8 +161,8 @@ export default function Home() {
                     Pop Show Delivery
                   </h2>
                   <p className='text-sx lg:text-base text-gray-300'>
-                    Peça agora e receba pipocas gourmet <br /> no
-                    conforto da sua casa
+                    Peça agora e receba pipocas gourmet <br /> no conforto da
+                    sua casa
                   </p>
                   <div className='flex justify-center lg:justify-start'>
                     <a
