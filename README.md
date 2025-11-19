@@ -42,13 +42,13 @@ bun install
 ```
 ##### 3. Start the development server:
 ```bash
-npm install
+npm run dev
 # or
-yarn install
+yarn run dev
 # or
-pnpm install
+pnpm run dev
 # or
-bun install
+bun run dev
 
 ```
 ### 4. Open the project in your browser: 
