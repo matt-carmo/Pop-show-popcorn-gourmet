@@ -25,8 +25,8 @@ Install my-project with npm
 
 ##### 1. clone repository
 ```bash
-git clone https://github.com/mattcarmo/pop-show-pipoca-gourmet.git
-cd pop-show-pipoca-gourmet
+git clone https://github.com/matt-carmo/pop-show-popcorn-gourmet
+cd pop-show-popcorn-gourmet
 
 ```
 ##### 2. Install dependencies:
